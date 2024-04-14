@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1>TechSpace Survey Form</h1>
+    <p>
+      გთხოვთ შეავსოთ ეს გამოკითხვის ფორმა, თქვენი გამოხმაურება ჩვენთვის
+      მნიშვნელოვანია!
+    </p>
+
+    <form action="#" method="post">
+      <label for="name">სახელი:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <br />
+      <label for="email">მეილი:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <br />
+
+      <label for="age">ასაკი:</label><br />
+      <input type="number" id="age" name="age" min="1" max="120" /><br />
+      <br />
+      <label for="role">შენი ამჟამინდელი პოზიცია:</label><br />
+      <select id="role" name="role">
+        <option value="student">სკოლის მოსწავლე</option>
+        <option value="full_time_job">ვმუშაობ</option>
+        <option value="full_time_learner">სტუდენტი</option>
+        <option value="prefer_not_to_say">
+          სწავლისა და სამუშაოსაგან თავისუფალი
+        </option>
+        <option value="other">სხვა</option></select
+      ><br />
+
+      <p>ურჩევთ მეგობარს რომ ისწავლოს ჩვენთან?</p>
+      <label><input type="radio" name="recommend" value="yes" /> არა</label
+      ><br />
+      <label><input type="radio" name="recommend" value="no" /> კი</label><br />
+
+      <br />
+      <p>რა მოგწონთ ყველაზე მეტად ჩვენს სერვისში :</p>
+
+      <label
+        ><input type="checkbox" name="service" value="support" />
+        ურთიერთგაგება</label
+      ><br />
+      <label
+        ><input type="checkbox" name="service" value="interface" /> მომხმარებლის
+        ინტერფეისი</label
+      ><br />
+      <br />
+
+      <label for="comments"
+        >დაგვიწერე რაიმე კომენტარი ან წინადადება (სურვილისამებრ)</label
+      ><br />
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea
+      ><br />
+      <br />
+
+      <button type="submit">გაგზავნა</button>
+    </form>
+  </body>
+</html>
